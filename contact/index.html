@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="contact">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Urbanist:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Contact us</title>
+</head>
+
+<body class="contact">
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <svg viewbox="0 0 60 60" width="40px" height="40px">
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        </svg>
+      </div>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contact</h1>
+  <main>
+    <div class="image-wrapper">
+      <img src="../images/squirrel.svg" alt="a line drawing of a squirrel">
+    </div>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <div class="fieldset-wrapper">
+        <fieldset>
+          <legend>Select your favorite squirrel color</legend>
+
+          <input type="radio" id="black" name="color" value="black">
+          <label for="black">Black</label>
+
+          <input type="radio" id="brown" name="color" value="brown">
+          <label for="brown">Brown</label>
+
+          <input type="radio" id="red" name="color" value="red">
+          <label for="red">Red</label>
+
+          <input type="radio" id="white" name="color" value="white">
+          <label for="white">White</label>
+
+          <input type="radio" id="green" name="color">
+          <label for="green">Emerald green</label>
+        </fieldset>
+      </div>
+      <div class="fieldset-wrapper">
+        <fieldset>
+          <legend>Choose super powers you wish squirrels had</legend>
+
+          <input type="checkbox" id="fangs" name="power" value="fangs">
+          <label for="fangs">Retractable steel fangs</label>
+
+          <input type="checkbox" id="flight" name="power" value="flight">
+          <label for="flight">Supersonic flight</label>
+
+          <input type="checkbox" id="martial-arts" name="power" value="martial-arts">
+          <label for="martial-arts">Martial arts master</label>
+
+          <input type="checkbox" id="telekinesis" name="power" value="telekinesis">
+          <label for="telekinesis">Telekinesis</label>
+        </fieldset>
+      </div>
+      <label for="haiku"><span>Compose a</span> squirrel haiku</label>
+      <textarea id="haiku" name="haiku" rows="3" placeholder="Use a 5,7,5 syllable pattern"></textarea>
+      <button class="button">Send</button>
+    </form>
+  </main>
+  <script>
+    document.querySelector(".menu-icon").addEventListener("click", function () {
+      this.parentElement.classList.toggle("close");
+    });
+  </script>
+</body>
+
+</html>
